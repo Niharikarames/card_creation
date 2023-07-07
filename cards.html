@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" type="text/css" href="card.css">
+
+</head>
+<body>
+  <div class="container">
+    <div class="card total-users" onclick="openModal('Total Users', '100')">
+      <span class="material-icons">Person</span>
+      <span>Total Users</span>
+      <span>100</span>
+    </div>
+    <div class="card active-users" onclick="openModal('Active Users', '80')">
+      <span class="material-icons">Person</span>
+      <span>Active Users</span>
+      <span>80</span>
+    </div>
+
+
+
+    <div class="card inactive-users" onclick="openModal('Inactive Users', '10')">
+      <span class="material-icons">Person</span>
+      <span>Inactive Users</span>
+      <span>10</span>
+    </div>
+    <div class="card currently-active-users" onclick="openModal('Currently Active Users', '60')">
+      <span class="material-icons">Person</span>
+      <span>Currently Active Users</span>
+      <span>60</span>
+    </div>
+  </div>
+
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times</span>
+      <p id="modal-title"></p>
+      <p id="modal-info"></p>
+    </div>
+  </div>
+
+<script src="card.js"></script>
+</body>
+</html>
+

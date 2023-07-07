@@ -1,0 +1,66 @@
+body {
+      font-family: Arial;
+      background-color: #f2f2f2;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+    }
+
+    .card {
+      width: 200px;
+      height: 150px;
+      padding: 20px;
+      border-radius: 25px;
+      margin: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: black;
+      font-size: 26px;
+      transition: all 0.3s ease;
+
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .modal {
+      background-color: white;
+      position: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    .modal-content p {
+      margin: 0;
+      margin-bottom: 10px;
+    }
+
+
+    .total-users {
+      background-color: #1abc9c;
+    }
+
+    .active-users {
+      background-color: rgb(238, 130, 238);
+    }
+
+    .inactive-users {
+      background-color: #e74c3c;
+    }
+
+    .currently-active-users {
+      background-color: red;
+    }
+
+
